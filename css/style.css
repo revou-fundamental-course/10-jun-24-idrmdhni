@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Simple Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Style */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background: linear-gradient(to top, #3f456d 10%, #9b86bd 105%);
+  color: #dee0eb;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px 5px 15px;
+  box-sizing: border-box;
+}
+
+.container > header > h1,
+.maincontent > article > h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.maincontent p,
+.maincontent .celcius {
+  margin-bottom: 10px;
+}
+
+.maincontent .result {
+  margin-bottom: 20px;
+}
+
+.maincontent input {
+  margin: 5px 0;
+}
+
+.maincontent #alert-message1 {
+  display: none;
+  color: #e60000;
+}
+
+.maincontent #alert-message2 {
+  display: none;
+  color: #e60000;
+}
+
+.maincontent #alert-message3 {
+  display: none;
+  color: #e60000;
+}
+
+.maincontent textarea {
+  margin-top: 5px;
+}
+
+.maincontent button,
+.maincontent textarea,
+.maincontent input {
+  background-color: #dee0eb;
+  color: #3f456d;
+  border: 2px solid #8c92ba;
+  border-radius: 6px;
+}
+
+.maincontent .btn {
+  display: flex;
+  width: 355px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.maincontent button {
+  flex: 1;
+  padding: 0.35em 0;
+  font-weight: bold;
+  border-radius: 16px;
+  margin: 0 5px 5px 0px;
+}
+
+.maincontent input:focus,
+.maincontent textarea:focus,
+.maincontent button:active {
+  border-color: #5a639c;
+  outline: none;
+  background-color: #ced0e1;
+}
+
+.maincontent textarea {
+  width: 350px;
+  height: 80px;
+  resize: none;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.maincontent input {
+  width: 350px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.maincontent .explanation {
+  margin: 10px 0 15px 0;
+}
+
+.maincontent .explanation.f-to-c {
+  margin-bottom: 50px;
+}
+
+.S_symbol {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+.or {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+  left: 70px;
+}
+
+.container > footer {
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.container > footer .name {
+  color: #24283e;
+}
+
+/* Responsive */
+@media (max-width: 380px) {
+  .maincontent input,
+  .maincontent textarea {
+    width: 100%;
+  }
+
+  .maincontent .btn {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .maincontent button {
+    margin-right: 0;
+  }
+}
